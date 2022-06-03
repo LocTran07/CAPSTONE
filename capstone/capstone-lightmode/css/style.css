@@ -18,7 +18,22 @@ body{
 /* offer */
 
 /* number */
+.number {
+    background-color: #189a46;
+    color: #ffffff;
+    padding: 50px 0;
+}
 
+.number .number-item p {
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.number .number-item h4 {
+    font-size: 20px;
+    opacity: 0.8;
+}
 /* plan */
 
 /* nutrition */
