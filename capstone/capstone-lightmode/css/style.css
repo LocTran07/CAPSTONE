@@ -1,17 +1,303 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Jost', sans-serif;
     color: #696969;
 }
+
+/* CLASS CHUNG */
+.title p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #f53626;
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #000c04;
+    text-align: center;
+    margin: 0;
+}
+
 /* header */
+.header {
+    padding: 6.5px 0;
+    background-color: white;
+    margin: 0;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .navbar-brand {
+    font-size: 34px;
+    font-weight: 600;
+    color: #189a46;
+    text-transform: capitalize;
+}
+
+.header .navbar-brand:hover {
+    color: #189a46;
+}
+
+.header .menu li {
+    padding: 0 12px;
+}
+
+.header .menu li a {
+    color: #000c04 !important;
+    font-size: 19px;
+    display: inline-block;
+    padding: 14px 0 !important;
+    transition: all 0.5s;
+}
+
+.header .menu li a::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 1px;
+    background-color: #189a46;
+    transition: all 0.5s ease;
+}
+
+.header .menu li a:hover::after {
+    width: 100%;
+}
+
+.header .menu li a:hover {
+    color: #189a46 !important;
+}
+
+.header .menu a.active {
+    color: #189a46 !important;
+}
+
+.header .arrow-down {
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.header .moon {
+    font-size: 20px;
+    transform: rotate(-20deg);
+    color: #000c04;
+    height: 20px;
+}
+
+.header .moon1 {
+    line-height: 57.5px;
+    margin-left: 25px;
+}
+
+/* @media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header .menu li a::after{
+        display: none;
+    }
+
+} */
 
 /* carousel */
+.carousel {
+    position: relative;
+}
+
+.carousel .item h4 {
+    font-size: 66px;
+    line-height: 76px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.carousel .item p {
+    font-size: 19px;
+    opacity: 0.9;
+    color: white;
+    line-height: 30px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.carousel .item a {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 12px 35px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 48px;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.carousel .item a:hover {
+    background-color: white;
+    color: #189a46;
+}
+
+.carousel .item a.active {
+    background-color: white;
+    color: #189a46;
+
+}
+
+.carousel .container .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 60;
+    margin: 0 auto;
+}
+
+.carousel .item1 {
+    background: url(../img/banner1.jpg) no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel .item1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+
+.carousel .item2 {
+    background: url(../img/banner2.jpg) no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel .item2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+
+.carousel .item2 .content {
+    margin-left: 425px;
+}
+
+.carousel .item3 {
+    background: url(../img/banner3.jpg) no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel .item3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+
+.carousel .item4 {
+    background: url(../img/banner4.jpg) no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel .item4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+
+.carousel .item4 .content {
+    margin-left: 425px;
+}
+
+.carousel .owl-theme .owl-nav.disabled+.owl-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel .owl-theme .owl-dots .owl-dot.active span,
+.carousel .owl-theme .owl-dots .owl-dot:hover span {
+    width: 30px;
+    height: 10px;
+    background-color: #189a46;
+}
+
+.carousel .owl-dot {
+    outline-style: none;
+}
 
 /* aboutus */
+.aboutus {
+    padding: 48px 0px;
+}
+
+.aboutus .container {
+    padding: 48px 15px;
+}
+
+.aboutus .content {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.aboutus .body p {
+    margin: 16px 0;
+    line-height: 28px;
+    color: #696969;
+    font-size: 19px;
+}
+
+.aboutus .body a {
+    font-size: 17px;
+    margin-top: 20px;
+    color: #000c04;
+    font-weight: 600;
+    border-bottom: 2px solid #189a46;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.aboutus .body a:hover {
+    color: #189a46;
+}
 
 /* portflio */
 
