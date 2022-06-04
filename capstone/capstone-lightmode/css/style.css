@@ -29,9 +29,13 @@ body {
     margin: 0;
 }
 
+.container {
+    max-width: 1200px;
+}
+
 /* header */
 .header {
-    padding: 6.5px 0;
+    padding: 14.5px 0;
     background-color: white;
     margin: 0;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
@@ -40,6 +44,10 @@ body {
     right: 0;
     left: 0;
     z-index: 1000;
+}
+
+.header .container {
+    padding: 0 25px;
 }
 
 .header .navbar-brand {
@@ -274,7 +282,7 @@ body {
 }
 
 .aboutus .content {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -293,6 +301,7 @@ body {
     border-bottom: 2px solid #189a46;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
+    display: inline-block;
 }
 
 .aboutus .body a:hover {
@@ -300,8 +309,120 @@ body {
 }
 
 /* portflio */
+.portflio {
+    padding: 48px 0;
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.portflio .container {
+    padding: 48px 25px;
+}
+
+.portflio .card i {
+    font-size: 30px;
+    color: #189a46;
+}
+
+.portflio .card h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 25px 0 15px;
+    color: #000c04;
+}
+
+.portflio .card p {
+    color: #696969;
+    line-height: 28px;
+    font-size: 19px;
+}
+
+.portflio .card a {
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #000c04;
+    border-bottom: 2px solid #189a46;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.portflio .card a:hover {
+    color: #189a46;
+}
+
+.portflio .card {
+    padding: 40px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.portflio .card:hover {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.portflio .coltop {
+    margin-bottom: 30px;
+}
 
 /* offer */
+.offer {
+    padding: 48px 0;
+
+}
+
+.offer .container {
+    padding: 48px 25px;
+}
+
+.offer .col1 {
+    padding: 0 15px 0 48px;
+}
+
+.offer img {
+    max-width: 527px;
+    border-radius: 10px;
+}
+
+.offer .title p,
+.offer .title h1 {
+    text-align: left;
+}
+
+.offer .body p {
+    margin: 15px 0 35px;
+    font-size: 16px;
+    line-height: 24.5px;
+
+}
+
+.offer .body li {
+    margin: 15px 0;
+    list-style: none;
+    color: #000c04;
+    font-weight: 600;
+}
+
+.offer .body li i {
+    color: #189a46;
+    font-size: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(147 107 232 / 5%);
+    text-align: center;
+    line-height: 26px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.offer .main {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* number */
 
