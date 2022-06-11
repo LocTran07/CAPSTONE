@@ -24,7 +24,7 @@ body {
     font-weight: 600;
     line-height: 48px;
     text-transform: capitalize;
-    color: #000c04;
+    color: white;
     text-align: center;
     margin: 0;
 }
@@ -36,11 +36,11 @@ body {
 /* header */
 .header {
     height: 90px;
-    background-color: white;
+    background-color: #151515;
     margin: 0;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
     position: fixed;
-    top: 0;
+    top:0;
     right: 0;
     left: 0;
     z-index: 1000;
@@ -53,6 +53,7 @@ body {
 
 #header .navbar {
     padding: 0;
+
 }
 
 #header .navbar-brand {
@@ -70,10 +71,12 @@ body {
 
 .header .menu li {
     padding: 0 12px;
+    background-color: #151515;
+
 }
 
 .header .menu li a {
-    color: #000c04 !important;
+    color: #ddd !important;
     font-size: 19px;
     display: inline-block;
     padding: 14px 0 !important;
@@ -107,9 +110,9 @@ body {
 }
 
 .header .moon {
-    font-size: 20px;
-    transform: rotate(-20deg);
-    color: #000c04;
+    font-size: 24px;
+   
+    color: #ddd;
     height: 20px;
 }
 
@@ -125,10 +128,6 @@ body {
 
 .header .navbar-toggler {
     padding: 0;
-}
-
-.header .navbar-toggler:focus {
-    /* outline:2px solid black; */
 }
 
 .header .navbar-nav {
@@ -290,6 +289,7 @@ body {
 /* aboutus */
 .aboutus {
     padding: 48px 0px;
+    background-color: #151515;
 }
 
 .aboutus .container {
@@ -300,18 +300,22 @@ body {
     max-width: 700px;
     margin: 0 auto;
 }
+ 
+.aboutus .title h1 {
+    color: #ddd;
+}
 
 .aboutus .body p {
     margin: 16px 0;
     line-height: 28px;
-    color: #696969;
+    color: #afafaf;
     font-size: 19px;
 }
 
 .aboutus .body a {
     font-size: 17px;
     margin-top: 20px;
-    color: #000c04;
+    color: #ddd;
     font-weight: 600;
     border-bottom: 2px solid #189a46;
     transition: all 0.3s ease-in-out;
@@ -326,7 +330,7 @@ body {
 /* portflio */
 .portflio {
     padding: 48px 0;
-    background-color: rgba(147, 107, 232, 0.05);
+    background-color: #222;
 }
 
 .portflio .container {
@@ -342,15 +346,15 @@ body {
     font-size: 24px;
     font-weight: 600;
     margin: 25px 0 15px;
-    color: #000c04;
-
+    color: #ddd;
 }
-.portflio .card h5:hover{
+
+.portflio .card h5:hover {
     color: #189a46;
 }
 
 .portflio .card p {
-    color: #696969;
+    color: #afafaf;
     line-height: 28px;
     font-size: 19px;
 }
@@ -360,7 +364,7 @@ body {
     font-size: 17px;
     margin-top: 20px;
     display: inline-block;
-    color: #000c04;
+    color: #ddd;
     border-bottom: 2px solid #189a46;
     transition: all 0.3s ease-in-out;
     font-weight: 600;
@@ -374,12 +378,12 @@ body {
     padding: 40px 30px;
     border: none;
     border-radius: 10px;
-    background-color: white;
+    background-color: #151515;
     transition: all 0.5s;
 }
 
 .portflio .card:hover {
-    background-color: rgba(147, 107, 232, 0.05);
+    background-color: #222;
 }
 
 .portflio .coltop {
@@ -389,6 +393,7 @@ body {
 /* offer */
 .offer {
     padding: 48px 0;
+    background-color: #151515;
 
 }
 
@@ -410,18 +415,22 @@ body {
 .offer .title h1 {
     text-align: left;
 }
+.offer .title h1 {
+    color: #ddd;
+
+}
 
 .offer .body p {
     margin: 15px 0 35px;
     font-size: 16px;
     line-height: 24.5px;
-
+    color: #afafaf;
 }
 
 .offer .body li {
     margin: 15px 0;
     list-style: none;
-    color: #000c04;
+    color: #dddddd;
     font-weight: 600;
 }
 
@@ -431,7 +440,7 @@ body {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background-color: rgb(147 107 232 / 5%);
+    background-color: #222222;
     text-align: center;
     line-height: 26px;
     display: inline-block;
